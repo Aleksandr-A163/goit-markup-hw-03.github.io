@@ -373,8 +373,7 @@ button {
 }
 
 .project_card .card_box {
-	padding: 20px 24px;
-	box-sizing: border-box;
+	padding: 20px;
 	background: #ffffff;
 	border: 1px solid #eeeeee;
 }
