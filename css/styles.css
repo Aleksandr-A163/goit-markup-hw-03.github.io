@@ -81,7 +81,7 @@ button {
 }
 
 .container {
-	width: 1200px;
+	width: 1170px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-left: auto;
@@ -94,6 +94,8 @@ button {
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
+	outline: 1px solid rgba(236, 236, 236, 1);
+	border-color: #000000;
 }
 
 .header .container {
@@ -213,6 +215,7 @@ button {
 
 .feature .text {
 	color: var(--second-text-color);
+	margin-top: 10px;
 }
 
 .feature {
@@ -243,7 +246,6 @@ button {
 
 .our-work-list li {
 	margin: 15px;
-	/* width: 370px; */
 }
 
 .section-title {
@@ -333,12 +335,16 @@ button {
 	list-style: none;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 50px;
+}
+
+.button_filter .button_item {
+	margin: 0 4px;
 }
 
 .button_filter .button.secondary {
 	padding: 6px 22px;
 	font-weight: 500;
-	margin: 0 4px;
 	line-height: 1.85;
 	letter-spacing: 0.03em;
 	background-color: var(--second-bg-color);
@@ -354,31 +360,34 @@ button {
 .portfolio-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	margin-top: -30px;
+	margin-left: -30px;
+	border: 1px solid red;
 }
 
 .portfolio-list .project_card {
+	flex-basis: calc(100% / 3 - 30px);
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+.project_card .card_box {
+	padding: 20px 24px;
 	box-sizing: border-box;
 	background: #ffffff;
 	border: 1px solid #eeeeee;
-	box-sizing: border-box;
-	margin-top: 32px;
-	padding: 0;
 }
-
 .project_card .title {
 	color: var(--main-text-color);
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
-	margin-top: 20px;
-	margin-left: 24px;
 }
 
 .project_card .text {
 	color: var(--second-text-color);
 	font-size: 16px;
 	line-height: 1.87;
-	margin-top: 4px;
-	margin-left: 24px;
 }
